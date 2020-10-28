@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .title {
+    background-color: azure;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.5em;
+  }
+
+  .gallery {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .gallery-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    transition: transform 0.5s;
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.5);
+  }
+
+  .gallery-item:hover {
+    transform: scale(1.1);
+  }
+
+  .gallery-item div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+
+
+
+  .gallery-item .caption {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div class="layout">
+    <div class="header">
+      <div class="logo">H<span style="font-variant:small-caps;">i</span>nI</div>
+      <div class="navbar">
+        <a href="Cart.html">Cart</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="Products.html">Products</a>
+        <a href="news.html">News</a>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+    <div class="title">
+      Honey is made in many parts of the Land of Israel.
+      Explore the variety of fragnances and tastes of the honey
+      coming from different regions of the Holy Land.
+    </div>
+    <div class="main">
+      <div class="gallery">
+        <a href="#Golan Heights" class="gallery-item">
+          <div style="background-image: url(Assets/golan-heights.jpg)" alt="Golan Heights"></div>
+          <div class="caption">Golan Heights</div>
+        </a>
+        <a href="#Galilee" class="gallery-item">
+          <div style="background-image: url(Assets/Galil-sea.jpg)" alt="Galilee"></div>
+          <div class="caption">Kineret</div>
+        </a>
+        <a href="#Mount Hermon" class="gallery-item">
+          <div style="background-image: url(Assets/hermon.jpg)" alt="Mount Hermon"></div>
+          <div class="caption">Mount Hermon</div>
+        </a>
+        <a href="#Mount Tavor" class="gallery-item">
+          <div style="background-image: url(Assets/tavor.jpg)" alt="Mount Tavor"></div>
+          <div class="caption">Mount Tavor</div>
+        </a>
+        <a href="#North Mediterranean" class="gallery-item">
+          <div style="background-image: url(Assets/north-Med.jpg)" alt="North Mediterranean"></div>
+          <div class="caption">North Mediterranean</div>
+        </a>
+        <a href="#South Yehuda" class="gallery-item">
+          <div style="background-image: url(Assets/south-yehuda.jpg)" alt="South Yehuda"></div>
+          <div class="caption">South Yehuda</div>
+        </a>
+      </div>
+    </div>
+    <div class="footer">
+      <div>Copyright 2020</div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

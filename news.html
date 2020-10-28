@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .navbar-title{
+    display: flex;
+    font-size: 2rem;
+  }
+  .title{
+display: flex;
+/* height: 2re;   */
+background-color: azure;
+justify-content: center;
+font-size: 2em; 
+  }
+  .main {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+ }
+.main > div{
+height: 45%;
+width: 30%;
+margin: 10px;
+object-fit: cover;
+border: solid 1px blueviolet;
+}
+
+@media only screen and (max-width: 700px) {
+  .main > div{
+height: 30%;
+width: 40%;
+  }
+}
+</style>
+<body>
+  <div class="layout">
+    <div class="header">
+      <div class="logo">H<span style="font-variant:small-caps;">i</span>nI</div>
+      <div class="navbar-title">News</div>
+      <div class="navbar">
+        <a href="Cart.html">Cart</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="Products.html">Products</a>
+        <a href="news.html">News</a>
+        <a href="index.html">Home</a>
+      </div>
+    </div>
+    <div class="title">
+    We'd be happy to provide you with all the information on honey you may ask for. Be in touch!
+    </div>
+    <div class="main">
+     <div class="item1">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2ZmPqUAkLpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+     <div class="item2"></div>
+     <div class="item3"></div>
+     <div class="item4"></div>
+     <div class="item5"></div>
+     <div class="item6"></div>
+    </div>
+    <div class="footer">
+      <div>Copyright 2020</div>
+    </div>
+  </div>
+</body>
+</html>
